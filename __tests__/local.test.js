@@ -29,7 +29,7 @@ describe("tests for Sequelize with various urls", () => {
         
           expect(users.length).toBeGreaterThan(0);
     });
-    it("url test.sqlite", async () => {
+    it("url https://", async () => {
         const sequelize = new Cloudflare2Sequelize({url: `${process.env.SEQUELIZE_NAME}?authToken=${process.env.SEQUELIZE_TOKEN}`, mode: SQLite.OPEN_READWRITE | SQLite.OPEN_CREATE | SQLite.OPEN_FULLMUTEX});
         const User = sequelize.define('User', {
             username: DataTypes.STRING,

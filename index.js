@@ -1,5 +1,5 @@
 import { Sequelize } from 'sequelize';
-import sqlite3 from '@libsql/sqlite3';
+import sqlite3 from '@rhildred/sqlite3';
 export default function (config) {
     let sequelize = null;
     if(config.url.match(/:\/\//)){

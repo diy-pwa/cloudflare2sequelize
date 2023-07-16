@@ -6,10 +6,12 @@
     "test": "vitest run __tests__"
   },
   "devDependencies": {
-    "@libsql/sqlite3": "^0.3.1",
     "dotenv": "^16.3.1",
+    "vitest": "^0.33.0"
+  },
+  "dependencies": {
     "sequelize": "^6.32.1",
     "sqlite3": "^5.1.6",
-    "vitest": "^0.33.0"
+    "@rhildred/sqlite3": "^0.3.3-pre"
   }
 }
